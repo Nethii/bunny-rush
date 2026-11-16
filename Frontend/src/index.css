@@ -1,0 +1,75 @@
+* {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E🐰%3C/text%3E%3C/svg%3E") 16 16, auto;
+}
+
+button {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E🐰%3C/text%3E%3C/svg%3E") 16 16, pointer !important;
+}
+
+input {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E🐰%3C/text%3E%3C/svg%3E") 16 16, text !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0f0f1a;
+  --card: #1a1a2e;
+  --card2: #16213e;
+  --primary: #ff6b35;
+  --secondary: #f7c948;
+  --text: #ffffff;
+  --text2: #b0b0c0;
+  --border: #2a2a4a;
+  --success: #4caf50;
+  --error: #f44336;
+  --shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+
+[data-theme="light"] {
+  --bg: #f0f4ff;
+  --card: #ffffff;
+  --card2: #e8eeff;
+  --primary: #ff6b35;
+  --secondary: #f7c948;
+  --text: #1a1a2e;
+  --text2: #555577;
+  --border: #d0d0e8;
+  --shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+input {
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
